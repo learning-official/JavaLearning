@@ -1,8 +1,10 @@
+package JavaLearning.LinkedListE;
+
 public class ImplementLinkedList {
     public static void main(String[] args){
 
-        int[] a = {1,2,3,4,5,66};
-        LinkedListT l = new LinkedListT(a);
+        LinkedListT<Integer> l = new LinkedListT<Integer>(1,2,3);
+
 
         System.out.println("基本測試 :");
         l.printForward();
