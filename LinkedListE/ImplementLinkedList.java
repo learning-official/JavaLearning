@@ -1,4 +1,4 @@
-package JavaLearning.LinkedListE;
+package LinkedListE;
 
 public class ImplementLinkedList {
     public static void main(String[] args){

@@ -1,4 +1,5 @@
-package JavaLearning.LinkedListE;
+package LinkedListE;
+
 public class LinkedListT<T>{
 
     private static class Node <T> {
