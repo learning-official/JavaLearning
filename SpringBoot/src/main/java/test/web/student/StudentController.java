@@ -33,7 +33,7 @@ public class StudentController{
             return ResponseEntity.status(201).body("INSERT Passed");
         }catch (Exception e){
             if (e.getMessage().contains("Duplicate entry")){
-                return ResponseEntity.status(400).body("Error : Student id " + student.getId() + " already exits.");
+                return ResponseEntity.status(409).body("Error : Student id " + student.getId() + " already exits.");
             }else{
                 return ResponseEntity.status(500).body("Internal Server Error");
             }
@@ -51,7 +51,7 @@ public class StudentController{
             }
         }catch (Exception e){
             if (e.getMessage().contains("Duplicate entry")){
-                return ResponseEntity.status(400).body("Error : Student id " + student.getId() + " already exits.");
+                return ResponseEntity.status(409).body("Error : Student id " + student.getId() + " already exits.");
             }else{
                 return ResponseEntity.status(500).body("Internal Server Error");
             }
